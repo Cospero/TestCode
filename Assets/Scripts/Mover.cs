@@ -16,6 +16,24 @@ public class Mover : MonoBehaviour
 
     private void Update() 
     {
-        _rigidbody.AddForce(Vector3.up*_speed);
+        if (Input.GetKey(KeyCode.W))
+        {
+            
+            _rigidbody.AddForce(Vector3.forward*_speed);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            _rigidbody.AddForce(Vector3.back*_speed);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            _rigidbody.AddForce(Vector3.right*_speed);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            _rigidbody.AddForce(Vector3.left*_speed);
+        }
+        
+        
     }
 }
