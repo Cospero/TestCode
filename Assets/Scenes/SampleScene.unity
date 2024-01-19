@@ -563,6 +563,7 @@ MonoBehaviour:
   - {fileID: 1714505303}
   - {fileID: 27078379}
   - {fileID: 1920744115}
+  NumToSpawn: 5
 --- !u!4 &727148569
 Transform:
   m_ObjectHideFlags: 0
